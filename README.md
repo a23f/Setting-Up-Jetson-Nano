@@ -1,4 +1,4 @@
-# Setting Up Jetson Nano
+# Setting Up Jetson Nano For YoloV5 Object Detection
 
 ## Hardware Required
 1. Nvidia Jetson Nano Developer Kit
