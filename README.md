@@ -63,15 +63,21 @@
      - `cd pytorch`
      - `python3.8 -m pip install -r requirements.txt`
      - `python3.8 setup.py install`
-3. Install torchvision
+3. Install PyTorch wheel
+   - `wget https://nvidia.box.com/shared/static/p57jwntv436lfrd78inwl7iml6p13fzh.whl -O torch-1.7.0-cp36-cp36m-linux_aarch64.whl`
+   - `sudo apt-get install python3-pip libopenblas-base libopenmpi-dev libomp-dev`
+   - `pip3 install Cython`
+   - `pip3 install numpy torch-1.7.0-cp36-cp36m-linux_aarch64.whl`
+4. Install torchvision
    - The torchvision package consists of popular datasets, model architectures, and common image transformations for computer vision.
    - Run the following codes to download and install torchvision
-     - `git clone https://github.com/pytorch/vision`
-     - `cd vision`
-     - `git checkout v0.8.0`
-     - `python3 setup.py bdist_wheel`
-     - `python3 -m pip install dist/torchvision-0.8.0a0+291f7e2-cp38-cp38-linux_aarch64.whl`
-4. Install YoloV5
+     - `sudo apt-get install libjpeg-dev zlib1g-dev libpython3-dev libavcodec-dev libavformat-dev libswscale-dev`
+     - `git clone --branch v0.8.1 https://github.com/pytorch/vision/torchvision`
+     - `cd torchvision`
+     - `export BUILD_VERSION=0.8.1 `
+     - `python3 setup.py install --user`
+     - `cd ../`
+5. Install YoloV5
    - Clone the repository
      - `git clone https://github.com/ultralytics/yolov5`
    - Modify requirements.txt
