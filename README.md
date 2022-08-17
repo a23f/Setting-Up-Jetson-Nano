@@ -97,4 +97,4 @@
   - `torch.cuda.is_available()`
 - The codes should return 'True' as an output if PyTorch recognize GPU on Jetson Nano.
 
-## We're good to go!
+## We're good to go! Let's do some inference on [Military Hand and Arm Signals Recognition System](https://github.com/a23f/Military-Hand-and-Arm-Signals-Recognition-System)
